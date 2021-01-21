@@ -4638,7 +4638,7 @@ const weaponHand = [
   type: `BZ`,
   weight: 445,
   damage1: 165,
-  rounds: 11,
+  rounds: 1,
   damage2: 141,
   apCost: 6,
   minAcc: 37,
@@ -6597,7 +6597,7 @@ function updateDisplay() {
 
 //////////////////W/O BAR//////////////// 
 
-  let weightToOutputRatio = Math.round(totalWeight/totalOutput*100);
+  let weightToOutputRatio = Math.trunc(totalWeight/totalOutput*100);
   if (weightToOutputRatio < 100) {
     document.getElementById(`weightToOutputBar`).style.width = `${weightToOutputRatio}`+`%`
     document.getElementById(`weightToOutputBar`).style.backgroundColor = `#76df9e`;
