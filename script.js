@@ -4638,7 +4638,7 @@ const weaponHand = [
   type: `BZ`,
   weight: 445,
   damage1: 165,
-  rounds: 1,
+  rounds: 11,
   damage2: 141,
   apCost: 6,
   minAcc: 37,
@@ -6267,7 +6267,8 @@ function updateDisplay() {
     document.getElementById(`wBody`).innerText = ``;
     document.getElementById(`wBody`).style.backgroundColor = `#ffc4c0`;
   } else {
-    document.getElementById(`wBody`).innerText = `HP: ${bodies[bodyID].HP} | Def: ${bodies[bodyID].def}
+    document.getElementById(`wBody`).innerText = `Name: ${bodies[bodyID].name}
+    HP: ${bodies[bodyID].HP} | Def: ${bodies[bodyID].def}
     Output: ${bodies[bodyID].output} 
     Weight: ${bodies[bodyID].weight}
     Evasion: ${bodies[bodyID].eva}%
@@ -6284,7 +6285,8 @@ function updateDisplay() {
     document.getElementById(`wLArm`).innerText = ``;
     document.getElementById(`wLArm`).style.backgroundColor = `#ffc4c0`;
   } else {
-    document.getElementById(`wLArm`).innerText = `HP: ${arms[lArmID].HP} | Def: ${arms[lArmID].def}
+    document.getElementById(`wLArm`).innerText = `Name: ${arms[lArmID].name}
+    HP: ${arms[lArmID].HP} | Def: ${arms[lArmID].def}
     Weight: ${arms[lArmID].weight}
     Accuracy: ${arms[lArmID].acc}%
     Armor type: ${arms[lArmID].armorType}
@@ -6299,7 +6301,8 @@ function updateDisplay() {
     document.getElementById(`wRArm`).innerText = ``;
     document.getElementById(`wRArm`).style.backgroundColor = `#ffc4c0`;
   } else {
-    document.getElementById(`wRArm`).innerText = `HP: ${arms[rArmID].HP} | Def: ${arms[rArmID].def}
+    document.getElementById(`wRArm`).innerText = `Name: ${arms[rArmID].name}
+    HP: ${arms[rArmID].HP} | Def: ${arms[rArmID].def}
     Weight: ${arms[rArmID].weight}
     Accuracy: ${arms[rArmID].acc}%
     Armor type: ${arms[rArmID].armorType}
@@ -6314,7 +6317,8 @@ function updateDisplay() {
     document.getElementById(`wLegs`).innerText = ``;
     document.getElementById(`wLegs`).style.backgroundColor = `#ffc4c0`;
   } else {
-    document.getElementById(`wLegs`).innerText = `HP: ${legs[legsID].HP} | Def: ${legs[legsID].def}
+    document.getElementById(`wLegs`).innerText = `Name: ${legs[legsID].name}
+    HP: ${legs[legsID].HP} | Def: ${legs[legsID].def}
     Weight: ${legs[legsID].weight}
     Type: ${legs[legsID].type} | Move: ${legs[legsID].MV}
     Evasion: ${legs[legsID].eva}%
@@ -6332,13 +6336,15 @@ function updateDisplay() {
   } else {  
     switch (backpackID) {
     case `0`:
-      document.getElementById(`wBackpack`).innerText = `Weight: ${backpacks[backpackID].weight}
+      document.getElementById(`wBackpack`).innerText = `Name: ${backpacks[backpackID].name}
+      Weight: ${backpacks[backpackID].weight}
       Output: ${backpacks[backpackID].output}`;
       totalOutput += backpacks[backpackID].output;
       break;
 
     case `1`:
-      document.getElementById(`wBackpack`).innerText = `Weight: ${backpacks[backpackID].weight}
+      document.getElementById(`wBackpack`).innerText = `Name: ${backpacks[backpackID].name}
+      Weight: ${backpacks[backpackID].weight}
       Output: ${backpacks[backpackID].output}
       Item space: ${backpacks[backpackID].itemSpace}
       Max item size: ${backpacks[backpackID].itemSize}
@@ -6348,7 +6354,8 @@ function updateDisplay() {
       break;
 
     case `2`:
-      document.getElementById(`wBackpack`).innerText = `Weight: ${backpacks[backpackID].weight}
+      document.getElementById(`wBackpack`).innerText = `Name: ${backpacks[backpackID].name}
+      Weight: ${backpacks[backpackID].weight}
       Output: ${backpacks[backpackID].output}
       Item space: ${backpacks[backpackID].itemSpace}
       Max item size: ${backpacks[backpackID].itemSize}
@@ -6358,7 +6365,8 @@ function updateDisplay() {
       break;
 
     case `3`:
-      document.getElementById(`wBackpack`).innerText = `Weight: ${backpacks[backpackID].weight}
+      document.getElementById(`wBackpack`).innerText = `Name: ${backpacks[backpackID].name}
+      Weight: ${backpacks[backpackID].weight}
       Repair: ${backpacks[backpackID].repair}
       All repair: ${backpacks[backpackID].allRepair}
       Restore: ${backpacks[backpackID].restore}
@@ -6368,7 +6376,8 @@ function updateDisplay() {
       break;
 
     case `4`:
-      document.getElementById(`wBackpack`).innerText = `Weight: ${backpacks[backpackID].weight}
+      document.getElementById(`wBackpack`).innerText = `Name: ${backpacks[backpackID].name}
+      Weight: ${backpacks[backpackID].weight}
       Repair: ${backpacks[backpackID].repair}
       Restore: ${backpacks[backpackID].restore}
       Range: ${backpacks[backpackID].range}
@@ -6376,7 +6385,8 @@ function updateDisplay() {
       break;
 
     case `5`:
-      document.getElementById(`wBackpack`).innerText = `Weight: ${backpacks[backpackID].weight}
+      document.getElementById(`wBackpack`).innerText = `Name: ${backpacks[backpackID].name}
+      Weight: ${backpacks[backpackID].weight}
       Status Attack: ${backpacks[backpackID].sAttack}
       Coating: ${backpacks[backpackID].coating}
       EMP accuracy: ${backpacks[backpackID].empAcc}%
@@ -6385,7 +6395,8 @@ function updateDisplay() {
       break;
 
     case `6`:
-      document.getElementById(`wBackpack`).innerText = `Weight: ${backpacks[backpackID].weight}
+      document.getElementById(`wBackpack`).innerText = `Name: ${backpacks[backpackID].name}
+      Weight: ${backpacks[backpackID].weight}
       Repair: ${backpacks[backpackID].repair}
       Remove: ${backpacks[backpackID].remove}
       Status Attack: ${backpacks[backpackID].sAttack}
@@ -6395,7 +6406,8 @@ function updateDisplay() {
       break;
 
     case `7`:
-      document.getElementById(`wBackpack`).innerText = `Weight: ${backpacks[backpackID].weight}
+      document.getElementById(`wBackpack`).innerText = `Name: ${backpacks[backpackID].name}
+      Weight: ${backpacks[backpackID].weight}
       All repair: ${backpacks[backpackID].allRepair}
       Status Attack: ${backpacks[backpackID].sAttack}
       Coating: ${backpacks[backpackID].coating}
@@ -6405,7 +6417,8 @@ function updateDisplay() {
       break;
 
     case `8`:
-      document.getElementById(`wBackpack`).innerText = `Weight: ${backpacks[backpackID].weight}
+      document.getElementById(`wBackpack`).innerText = `Name: ${backpacks[backpackID].name}
+      Weight: ${backpacks[backpackID].weight}
       Status Attack: ${backpacks[backpackID].sAttack}
       EMP accuracy: ${backpacks[backpackID].empAcc}%
       Range: ${backpacks[backpackID].range}
@@ -6414,7 +6427,8 @@ function updateDisplay() {
       break;
 
     case `9`:
-      document.getElementById(`wBackpack`).innerText = `Weight: ${backpacks[backpackID].weight}
+      document.getElementById(`wBackpack`).innerText = `Name: ${backpacks[backpackID].name}
+      Weight: ${backpacks[backpackID].weight}
       EMP accuracy: ${backpacks[backpackID].empAcc}%
       Range: ${backpacks[backpackID].range}
       Sensor range: ${backpacks[backpackID].sensorRange}
@@ -6438,7 +6452,8 @@ function updateDisplay() {
     case `GG`:
     case `FT`:
     case `RF`:   
-      document.getElementById(`wLHand`).innerText = `Type: ${weaponHand[lHandID].type} | Weight: ${weaponHand[lHandID].weight}
+      document.getElementById(`wLHand`).innerText = `Name: ${weaponHand[lHandID].name}
+      Type: ${weaponHand[lHandID].type} | Weight: ${weaponHand[lHandID].weight}
       Attack: ${weaponHand[lHandID].damage}x${weaponHand[lHandID].rounds} (${weaponHand[lHandID].damage*weaponHand[lHandID].rounds})
       Accuracy: ${weaponHand[lHandID].maxAcc}-${weaponHand[lHandID].minAcc}%
       AP cost: ${weaponHand[lHandID].apCost}
@@ -6447,7 +6462,8 @@ function updateDisplay() {
       break;
 
     case `BZ`:
-      document.getElementById(`wLHand`).innerText = `Type: BZ | Weight: ${weaponHand[lHandID].weight}
+      document.getElementById(`wLHand`).innerText = `Name: ${weaponHand[lHandID].name}
+      Type: BZ | Weight: ${weaponHand[lHandID].weight}
       Attack: ${weaponHand[lHandID].damage1}x${weaponHand[lHandID].rounds}+${weaponHand[lHandID].damage2}
       Accuracy: ${weaponHand[lHandID].maxAcc}-${weaponHand[lHandID].minAcc}%
       AP cost: ${weaponHand[lHandID].apCost}
@@ -6458,7 +6474,8 @@ function updateDisplay() {
     case `KN`:
     case `RD`:
     case `PB`:
-      document.getElementById(`wLHand`).innerText = `Type: ${weaponHand[lHandID].type} | Weight: ${weaponHand[lHandID].weight}
+      document.getElementById(`wLHand`).innerText = `Name: ${weaponHand[lHandID].name}
+      Type: ${weaponHand[lHandID].type} | Weight: ${weaponHand[lHandID].weight}
       Attack: ${weaponHand[lHandID].damage}x${weaponHand[lHandID].rounds}
       Accuracy: ${weaponHand[lHandID].acc}%
       AP cost: ${weaponHand[lHandID].apCost}
@@ -6466,7 +6483,8 @@ function updateDisplay() {
       break;
 
     case `SD`:
-      document.getElementById(`wLHand`).innerText = `Type: ${weaponHand[lHandID].type} | Weight: ${weaponHand[lHandID].weight}
+      document.getElementById(`wLHand`).innerText = `Name: ${weaponHand[lHandID].name}
+      Type: ${weaponHand[lHandID].type} | Weight: ${weaponHand[lHandID].weight}
       Attack: ${weaponHand[lHandID].damage}x${weaponHand[lHandID].rounds} | Acc: ${weaponHand[lHandID].acc}%
       AP cost: ${weaponHand[lHandID].apCost}
       Damage Cut: ${weaponHand[lHandID].dCut}%
@@ -6492,7 +6510,8 @@ function updateDisplay() {
     case `GG`:
     case `FT`:
     case `RF`:   
-      document.getElementById(`wRHand`).innerText = `Type: ${weaponHand[rHandID].type} | Weight: ${weaponHand[rHandID].weight}
+      document.getElementById(`wRHand`).innerText = `Name: ${weaponHand[rHandID].name}
+      Type: ${weaponHand[rHandID].type} | Weight: ${weaponHand[rHandID].weight}
       Attack: ${weaponHand[rHandID].damage}x${weaponHand[rHandID].rounds} (${weaponHand[rHandID].damage*weaponHand[rHandID].rounds})
       Accuracy: ${weaponHand[rHandID].maxAcc}-${weaponHand[rHandID].minAcc}%
       AP cost: ${weaponHand[rHandID].apCost}
@@ -6501,7 +6520,8 @@ function updateDisplay() {
       break;
 
     case `BZ`:
-      document.getElementById(`wRHand`).innerText = `Type: BZ | Weight: ${weaponHand[rHandID].weight}
+      document.getElementById(`wRHand`).innerText = `Name: ${weaponHand[rHandID].name}
+      Type: BZ | Weight: ${weaponHand[rHandID].weight}
       Attack: ${weaponHand[rHandID].damage1}x${weaponHand[rHandID].rounds}+${weaponHand[rHandID].damage2}
       Accuracy: ${weaponHand[rHandID].maxAcc}-${weaponHand[rHandID].minAcc}%
       AP cost: ${weaponHand[rHandID].apCost}
@@ -6512,7 +6532,8 @@ function updateDisplay() {
     case `KN`:
     case `RD`:
     case `PB`:
-      document.getElementById(`wRHand`).innerText = `Type: ${weaponHand[rHandID].type} | Weight: ${weaponHand[rHandID].weight}
+      document.getElementById(`wRHand`).innerText = `Name: ${weaponHand[rHandID].name}
+      Type: ${weaponHand[rHandID].type} | Weight: ${weaponHand[rHandID].weight}
       Attack: ${weaponHand[rHandID].damage}x${weaponHand[rHandID].rounds}
       Accuracy: ${weaponHand[rHandID].acc}%
       AP cost: ${weaponHand[rHandID].apCost}
@@ -6520,7 +6541,8 @@ function updateDisplay() {
       break;
 
     case `SD`:
-      document.getElementById(`wRHand`).innerText = `Type: ${weaponHand[rHandID].type} | Weight: ${weaponHand[rHandID].weight}
+      document.getElementById(`wRHand`).innerText = `Name: ${weaponHand[rHandID].name}
+      Type: ${weaponHand[rHandID].type} | Weight: ${weaponHand[rHandID].weight}
       Attack: ${weaponHand[rHandID].damage}x${weaponHand[rHandID].rounds} | Acc: ${weaponHand[rHandID].acc}%
       AP cost: ${weaponHand[rHandID].apCost}
       Damage Cut: ${weaponHand[rHandID].dCut}%
@@ -6541,7 +6563,8 @@ function updateDisplay() {
   } else {
     switch (weaponShoulder[lShoulderID].type){
     case `MS`:
-      document.getElementById(`wLShoulder`).innerText = `Type: ${weaponShoulder[lShoulderID].type} | Weight: ${weaponShoulder[lShoulderID].weight}
+      document.getElementById(`wLShoulder`).innerText = `Name: ${weaponShoulder[lShoulderID].name}
+      Type: ${weaponShoulder[lShoulderID].type} | Weight: ${weaponShoulder[lShoulderID].weight}
       Attack: ${weaponShoulder[lShoulderID].damage}x${weaponShoulder[lShoulderID].rounds} (${weaponShoulder[lShoulderID].damage*weaponShoulder[lShoulderID].rounds})
       AP cost: ${weaponShoulder[lShoulderID].apCost} | Ammo: ${weaponShoulder[lShoulderID].ammo}
       Range: ${weaponShoulder[lShoulderID].range}
@@ -6549,7 +6572,8 @@ function updateDisplay() {
       break;
     case `GR`:
     case `RK`:
-      document.getElementById(`wLShoulder`).innerText = `Type: ${weaponShoulder[lShoulderID].type} | Weight: ${weaponShoulder[lShoulderID].weight}
+      document.getElementById(`wLShoulder`).innerText = `Name: ${weaponShoulder[lShoulderID].name}
+      Type: ${weaponShoulder[lShoulderID].type} | Weight: ${weaponShoulder[lShoulderID].weight}
       Attack: ${weaponShoulder[lShoulderID].damage}x${weaponShoulder[lShoulderID].rounds}
       AP cost: ${weaponShoulder[lShoulderID].apCost} | Ammo: ${weaponShoulder[lShoulderID].ammo}
       Range: ${weaponShoulder[lShoulderID].range} | AoE: ${weaponShoulder[lShoulderID].aoe}
@@ -6567,7 +6591,8 @@ function updateDisplay() {
   } else {
     switch (weaponShoulder[rShoulderID].type){
     case `MS`:
-      document.getElementById(`wRShoulder`).innerText = `Type: ${weaponShoulder[rShoulderID].type} | Weight: ${weaponShoulder[rShoulderID].weight}
+      document.getElementById(`wRShoulder`).innerText = `Name: ${weaponShoulder[rShoulderID].name}
+      Type: ${weaponShoulder[rShoulderID].type} | Weight: ${weaponShoulder[rShoulderID].weight}
       Attack: ${weaponShoulder[rShoulderID].damage}x${weaponShoulder[rShoulderID].rounds} (${weaponShoulder[rShoulderID].damage*weaponShoulder[rShoulderID].rounds})
       AP cost: ${weaponShoulder[rShoulderID].apCost} | Ammo: ${weaponShoulder[rShoulderID].ammo}
       Range: ${weaponShoulder[rShoulderID].range}
@@ -6575,7 +6600,8 @@ function updateDisplay() {
       break;
     case `GR`:
     case `RK`:
-      document.getElementById(`wRShoulder`).innerText = `Type: ${weaponShoulder[rShoulderID].type} | Weight: ${weaponShoulder[rShoulderID].weight}
+      document.getElementById(`wRShoulder`).innerText = `Name: ${weaponShoulder[rShoulderID].name}
+      Type: ${weaponShoulder[rShoulderID].type} | Weight: ${weaponShoulder[rShoulderID].weight}
       Attack: ${weaponShoulder[rShoulderID].damage}x${weaponShoulder[rShoulderID].rounds}
       AP cost: ${weaponShoulder[rShoulderID].apCost} | Ammo: ${weaponShoulder[rShoulderID].ammo}
       Range: ${weaponShoulder[rShoulderID].range} | AoE: ${weaponShoulder[rShoulderID].aoe}
@@ -6597,7 +6623,7 @@ function updateDisplay() {
 
 //////////////////W/O BAR//////////////// 
 
-  let weightToOutputRatio = Math.trunc(totalWeight/totalOutput*100);
+  let weightToOutputRatio = Math.round(totalWeight/totalOutput*100);
   if (weightToOutputRatio < 100) {
     document.getElementById(`weightToOutputBar`).style.width = `${weightToOutputRatio}`+`%`
     document.getElementById(`weightToOutputBar`).style.backgroundColor = `#76df9e`;
@@ -6607,12 +6633,4 @@ function updateDisplay() {
   }
 };
 
-document.querySelector(`#bodyID`).addEventListener(`change`, updateDisplay);
-document.querySelector(`#lArmID`).addEventListener(`change`, updateDisplay);
-document.querySelector(`#rArmID`).addEventListener(`change`, updateDisplay);
-document.querySelector(`#legsID`).addEventListener(`change`, updateDisplay);
-document.querySelector(`#backpackID`).addEventListener(`change`, updateDisplay);
-document.querySelector(`#lHandID`).addEventListener(`change`, updateDisplay);
-document.querySelector(`#rHandID`).addEventListener(`change`, updateDisplay);
-document.querySelector(`#lShoulderID`).addEventListener(`change`, updateDisplay);
-document.querySelector(`#rShoulderID`).addEventListener(`change`, updateDisplay);
+document.querySelector(`#setupBox`).addEventListener(`change`, updateDisplay);
