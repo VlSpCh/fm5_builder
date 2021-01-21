@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Arial Narrow", "PT Sans Narrow", "AvenirNextCondensed-Regular", Arial, sans-serif
+  font-family: "Arial Narrow", "AvenirNextCondensed-Regular", "PT Sans Narrow", Arial, sans-serif;
   background-color: #f5f7f8;
   overflow: visible;
 }
