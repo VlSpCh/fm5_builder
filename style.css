@@ -6,9 +6,6 @@ body {
   background-color: #f5f7f8;
 }
 
-h1 {
-  margin: 0.2rem;
-}
 
 h2 {
   margin: 0.2rem;
@@ -17,11 +14,10 @@ h2 {
 h4 {
   text-align: center;
   margin: 0.5rem;
-  margin-bottom: 1rem;
 }
 
 select {
-  width: 8rem;
+  width: 10rem;
 }
 
 .disabledOption {
@@ -43,13 +39,6 @@ select {
   margin-top: 1.5rem;
 }
 
-.setup_container {
-  width: 14rem;
-  border: solid 0.2rem #777;
-  padding: 0.5rem;
-  margin-left: 0.5rem;
-}
-
 .part_selector {
   display: flex;
   flex-direction: row;
@@ -60,7 +49,7 @@ select {
 .wanzer_container {
   width: 30rem;
   height: 100%;
-  border: solid 0.2rem #777;
+  border: solid 0.2rem #999999;
   padding: 0.5rem;
   margin-left: 0.5rem;
 }
@@ -68,7 +57,7 @@ select {
 .stats_grid {
   display: grid;
   grid-template-columns: 10rem 10rem 10rem;
-  grid-template-rows: 2rem 10rem 10rem 10rem;
+  grid-template-rows: 2rem 3rem 10rem 3rem 10rem 3rem 10rem;
 }
 
 .grid_item {
@@ -99,7 +88,7 @@ select {
   position: fixed;
   left: 2rem;
   bottom: 0;
-  color: #b6b6b6;
+  color: #dadada;
 }
 
 #weightToOutputBar {
@@ -172,5 +161,9 @@ select {
 }
 
 @media (max-width:1500px) {
-  .footer_container {display:none;}
+  .footer_container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;}
  }

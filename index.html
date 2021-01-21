@@ -11,16 +11,276 @@
 <body>
   
   <header class="header_container">
-    <h1>Front Mission 5: Scars of the War</h1>
-    <h2>Wanzer builder</h2>  
+    <h2>Front Mission 5: Scars of the War</h1>
+    <h4>Wanzer builder</h2>  
   </header>
 
   <main class="main_container">
-      <section class="setup_container" id="setupBox">
-        <h4>SETUP</h4>
-        <div class="parts_container">
+      <section class="wanzer_container">
+        <div class="stats_grid" id="info">
+          <div class="weightToOutput" id="W_O">W/O: 0/0 FREE: 0</div>
+          <div class="WObar1"><div id="weightToOutputBar"></div></div>
           <div class="part_selector">
-            <p>Body</p>
+            <select name="Right Shoulder" id="rShoulderID">
+              <option value="none" selected>None</option>
+              <optgroup label="MIssile Launchers">
+                <option value="0">Donkey</option>
+                <option value="1">Donkey L</option>
+                <option value="2">Donkey DX</option>
+                <option value="3">Donkey DX2</option>
+                <option value="4">Goldias</option>
+                <option value="5">Goldias S</option>
+                <option value="6">Goldias L</option>
+                <option value="7">Magic Box</option>
+                <option value="8">Magic Box 2A</option>
+                <option value="9">Magic Box 2B</option>
+                <option value="10">MGR</option>
+                <option value="11">MGR-M</option>
+                <option value="12">MGR-2</option>
+                <option value="13">MGR-3</option>
+                <option value="14">PIZ 3</option>
+                <option value="15">PIZ 3E</option>
+                <option value="16">PIZ 4</option>
+                <option value="17">PIZ 4R</option>
+                <option value="18">Sunowl</option>
+                <option value="19">Sundog</option>
+                <option value="20">Sunglow</option>
+              </optgroup>
+              <optgroup label="Grenade Launchers">
+                <option value="21">Iguchi Type 82</option>
+                <option value="22">Iguchi Type 82A</option>
+                <option value="23">Iguchi Type 82B</option>
+                <option value="24">Lazy Horn</option>
+                <option value="25">Bar Horn</option>
+                <option value="26">Wis Horn</option>
+                <option value="27">Skua</option>
+                <option value="28">Skua G</option>
+                <option value="29">High Skua</option>
+                <option value="30">Thunderbolt</option>
+                <option value="31">Thunderbolt 2</option>
+                <option value="32">Thunderbolt 3</option>
+              </optgroup>
+              <optgroup label="Rocket Launchers">
+                <option value="33">Albatross</option>
+                <option value="34">Albatross R</option>
+                <option value="35">Albatross S</option>
+                <option value="36">Egret</option>
+                <option value="37">Egret E</option>
+                <option value="38">Egret F</option>
+                <option value="39">Galbados</option>
+                <option value="40">Galbados 2</option>
+                <option value="41">Galbados 3</option>
+                <option value="42">Wildgoose</option>
+                <option value="43">Wildgoose 2</option>
+                <option value="44">Wildgoose 3</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="part_selector">
+            <select name="Backpack" id="backpackID">
+              <option value="none" selected>None</option>
+              <option value="0">Turbo</option>
+              <option value="1">Item Turbo</option>
+              <option value="2">Turbo Item</option>
+              <option value="3">Repair</option>
+              <option value="4">Repair Light</option>
+              <option value="5">EMP</option>
+              <option value="6">EMP Repair</option>
+              <option value="7">Repair EMP</option>
+              <option value="8">Sensor EMP</option>
+              <option value="9">Sensor</option>
+            </select>
+          </div>
+          <div class="part_selector">
+            <select name="Left Shoulder" id="lShoulderID">
+              <option value="none" selected>None</option>
+              <optgroup label="MIssile Launchers">
+                <option value="0">Donkey</option>
+                <option value="1">Donkey L</option>
+                <option value="2">Donkey DX</option>
+                <option value="3">Donkey DX2</option>
+                <option value="4">Goldias</option>
+                <option value="5">Goldias S</option>
+                <option value="6">Goldias L</option>
+                <option value="7">Magic Box</option>
+                <option value="8">Magic Box 2A</option>
+                <option value="9">Magic Box 2B</option>
+                <option value="10">MGR</option>
+                <option value="11">MGR-M</option>
+                <option value="12">MGR-2</option>
+                <option value="13">MGR-3</option>
+                <option value="14">PIZ 3</option>
+                <option value="15">PIZ 3E</option>
+                <option value="16">PIZ 4</option>
+                <option value="17">PIZ 4R</option>
+                <option value="18">Sunowl</option>
+                <option value="19">Sundog</option>
+                <option value="20">Sunglow</option>
+              </optgroup>
+              <optgroup label="Grenade Launchers">
+                <option value="21">Iguchi Type 82</option>
+                <option value="22">Iguchi Type 82A</option>
+                <option value="23">Iguchi Type 82B</option>
+                <option value="24">Lazy Horn</option>
+                <option value="25">Bar Horn</option>
+                <option value="26">Wis Horn</option>
+                <option value="27">Skua</option>
+                <option value="28">Skua G</option>
+                <option value="29">High Skua</option>
+                <option value="30">Thunderbolt</option>
+                <option value="31">Thunderbolt 2</option>
+                <option value="32">Thunderbolt 3</option>
+              </optgroup>
+              <optgroup label="Rocket Launchers">
+                <option value="33">Albatross</option>
+                <option value="34">Albatross R</option>
+                <option value="35">Albatross S</option>
+                <option value="36">Egret</option>
+                <option value="37">Egret E</option>
+                <option value="38">Egret F</option>
+                <option value="39">Galbados</option>
+                <option value="40">Galbados 2</option>
+                <option value="41">Galbados 3</option>
+                <option value="42">Wildgoose</option>
+                <option value="43">Wildgoose 2</option>
+                <option value="44">Wildgoose 3</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="grid_item" id="wRShoulder"></div>
+          <div class="grid_item" id="wBackpack"></div>
+          <div class="grid_item" id="wLShoulder"></div>
+          <div class="part_selector">
+            <select name="RightArm" id="rArmID">
+              <option value="none" selected>None</option>
+              <optgroup label="Cheyenne">
+                <option value="0">Cheyenne</option>
+                <option value="1">Cheyenne F</option>
+                <option value="2">Cheyenne TX</option>
+              </optgroup>
+              <optgroup label="Crustacia">
+                <option value="3">Crustacia</option>
+                <option value="4">Cancer</option>
+                <option value="5">Carapace</option>
+              </optgroup>
+              <optgroup label="Desmatz">
+                <option value="6">Desmatz N</option>
+                <option value="7">Desmatz M</option>
+                <option value="8">Death Mantis DD</option>
+                <option value="9">Argiope S</option>
+                <option value="10">Argiope L</option>
+              </optgroup>
+              <optgroup label="Eldos">
+                <option value="11">Eldos</option>
+                <option value="12">Eldos A</option>
+                <option value="13">Eldos B</option>
+                <option value="14">Eldos 2</option>
+              </optgroup>
+              <optgroup label="Enyo">
+                <option value="15">Enyo</option>
+                <option value="16">Enyo LT</option>
+                <option value="17">Enyo 2</option>
+                <option value="18">Enyo 3</option>
+              </optgroup>
+              <optgroup label="Frost">
+                <option value="19">Frost</option>
+                <option value="20">Frost HW</option>
+                <option value="21">Blizzaia</option>
+                <option value="22">Blizzaia L</option>
+              </optgroup>
+              <optgroup label="Giza">
+                <option value="23">Giza</option>
+                <option value="24">Giza LW</option>
+                <option value="25">Giza 2</option>
+                <option value="26">Bes A</option>
+                <option value="27">Bes B</option>
+              </optgroup>
+              <optgroup label="Grapple">
+                <option value="28">Grapple</option>
+                <option value="29">Grapple F</option>
+                <option value="30">Grapple FS</option>
+                <option value="31">Grapple FS2</option>
+                <option value="32">Grapple EX</option>
+                <option value="33">Grapple X</option>
+                <option value="34">Grapple X2</option>
+              </optgroup>
+              <optgroup label="Grille Sechs">
+                <option value="35">Grille Sechs</option>
+                <option value="36">Grille Sechs D</option>
+                <option value="37">Grille Sechs H</option>
+              </optgroup>
+              <optgroup label="Gust">
+                <option value="38">Gust</option>
+                <option value="39">Storm</option>
+                <option value="40">Vapor</option>
+                <option value="41">Vapor 2</option>
+              </optgroup>
+              <optgroup label="Kyojun">
+                <option value="42">Kyojun</option>
+                <option value="43">Kyojun LT</option>
+                <option value="44">Kyojun A</option>
+                <option value="45">Kyojun B</option>
+              </optgroup>
+              <optgroup label="Luftrauber">
+                <option value="46">Luftrauber</option>
+                <option value="47">Luftpanger</option>
+                <option value="48">Luftritter</option>
+              </optgroup>
+              <optgroup label="Numsekar">
+                <option value="49">Numsecar</option>
+                <option value="50">Enforcer</option>
+                <option value="51">Mungoss</option>
+                <option value="52">Mungoss G</option>
+              </optgroup>
+              <optgroup label="Recson">
+                <option value="53">Recson</option>
+                <option value="54">U-Recson</option>
+                <option value="55">H-Recson</option>
+                <option value="56">H-Recson AP</option>
+              </optgroup>
+              <optgroup label="Schakal">
+                <option value="57">Schakal</option>
+                <option value="58">Schakal LW</option>
+                <option value="59">Schakal B</option>
+                <option value="60">Schakal C</option>
+              </optgroup>
+              <optgroup label="Scintilla">
+                <option value="61">Scintilla</option>
+                <option value="62">Scintilla LW</option>
+                <option value="63">Black Knight</option>
+                <option value="64">Black Knight 2</option>
+              </optgroup>
+              <optgroup label="Uisk">
+                <option value="65">Uisk</option>
+                <option value="66">Uisk II</option>
+                <option value="67">Uisk II SP</option>
+              </optgroup>
+              <optgroup label="Vyzov">
+                <option  value="68">Vyzov</option>
+              </optgroup>
+              <optgroup label="Warlus">
+                <option value="69">Warlus</option>
+                <option value="70">Warlus LW</option>
+                <option value="71">Strife</option>
+                <option value="72">Strife 2</option>
+              </optgroup>
+              <optgroup label="Zenith">
+                <option value="73">Zenith</option>
+                <option value="74">Zeria</option>
+                <option value="75">Zenith DV</option>
+                <option value="76">Zenith RV</option>
+              </optgroup>
+              <optgroup label="Glen's Zenith">
+                <option value="77">Glen's Zenith</option>
+              </optgroup>
+              <optgroup label="Zenith RV2">
+                <option value="78">Zenith RV2</option>
+                <option value="79">Dasler Claw</option>
+                <option value="80">Dasler Claw 0</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="part_selector">
             <select name="Body" id="bodyID">
               <option value="none" selected>None</option>
               <optgroup label="Cheyenne">
@@ -154,7 +414,6 @@
             </select>
           </div>
           <div class="part_selector">
-            <p>L.Arm</p>
             <select name="LeftArm" id="lArmID">
               <option value="none" selected>None</option>
               <optgroup label="Cheyenne">
@@ -284,479 +543,10 @@
               </optgroup>
             </select>
           </div>
+          <div class="grid_item" id="wRArm"></div>
+          <div class="grid_item" id="wBody"></div>
+          <div class="grid_item" id="wLArm"></div>
           <div class="part_selector">
-            <p>R.Arm</p>
-            <select name="RightArm" id="rArmID">
-              <option value="none" selected>None</option>
-              <optgroup label="Cheyenne">
-                <option value="0">Cheyenne</option>
-                <option value="1">Cheyenne F</option>
-                <option value="2">Cheyenne TX</option>
-              </optgroup>
-              <optgroup label="Crustacia">
-                <option value="3">Crustacia</option>
-                <option value="4">Cancer</option>
-                <option value="5">Carapace</option>
-              </optgroup>
-              <optgroup label="Desmatz">
-                <option value="6">Desmatz N</option>
-                <option value="7">Desmatz M</option>
-                <option value="8">Death Mantis DD</option>
-                <option value="9">Argiope S</option>
-                <option value="10">Argiope L</option>
-              </optgroup>
-              <optgroup label="Eldos">
-                <option value="11">Eldos</option>
-                <option value="12">Eldos A</option>
-                <option value="13">Eldos B</option>
-                <option value="14">Eldos 2</option>
-              </optgroup>
-              <optgroup label="Enyo">
-                <option value="15">Enyo</option>
-                <option value="16">Enyo LT</option>
-                <option value="17">Enyo 2</option>
-                <option value="18">Enyo 3</option>
-              </optgroup>
-              <optgroup label="Frost">
-                <option value="19">Frost</option>
-                <option value="20">Frost HW</option>
-                <option value="21">Blizzaia</option>
-                <option value="22">Blizzaia L</option>
-              </optgroup>
-              <optgroup label="Giza">
-                <option value="23">Giza</option>
-                <option value="24">Giza LW</option>
-                <option value="25">Giza 2</option>
-                <option value="26">Bes A</option>
-                <option value="27">Bes B</option>
-              </optgroup>
-              <optgroup label="Grapple">
-                <option value="28">Grapple</option>
-                <option value="29">Grapple F</option>
-                <option value="30">Grapple FS</option>
-                <option value="31">Grapple FS2</option>
-                <option value="32">Grapple EX</option>
-                <option value="33">Grapple X</option>
-                <option value="34">Grapple X2</option>
-              </optgroup>
-              <optgroup label="Grille Sechs">
-                <option value="35">Grille Sechs</option>
-                <option value="36">Grille Sechs D</option>
-                <option value="37">Grille Sechs H</option>
-              </optgroup>
-              <optgroup label="Gust">
-                <option value="38">Gust</option>
-                <option value="39">Storm</option>
-                <option value="40">Vapor</option>
-                <option value="41">Vapor 2</option>
-              </optgroup>
-              <optgroup label="Kyojun">
-                <option value="42">Kyojun</option>
-                <option value="43">Kyojun LT</option>
-                <option value="44">Kyojun A</option>
-                <option value="45">Kyojun B</option>
-              </optgroup>
-              <optgroup label="Luftrauber">
-                <option value="46">Luftrauber</option>
-                <option value="47">Luftpanger</option>
-                <option value="48">Luftritter</option>
-              </optgroup>
-              <optgroup label="Numsekar">
-                <option value="49">Numsecar</option>
-                <option value="50">Enforcer</option>
-                <option value="51">Mungoss</option>
-                <option value="52">Mungoss G</option>
-              </optgroup>
-              <optgroup label="Recson">
-                <option value="53">Recson</option>
-                <option value="54">U-Recson</option>
-                <option value="55">H-Recson</option>
-                <option value="56">H-Recson AP</option>
-              </optgroup>
-              <optgroup label="Schakal">
-                <option value="57">Schakal</option>
-                <option value="58">Schakal LW</option>
-                <option value="59">Schakal B</option>
-                <option value="60">Schakal C</option>
-              </optgroup>
-              <optgroup label="Scintilla">
-                <option value="61">Scintilla</option>
-                <option value="62">Scintilla LW</option>
-                <option value="63">Black Knight</option>
-                <option value="64">Black Knight 2</option>
-              </optgroup>
-              <optgroup label="Uisk">
-                <option value="65">Uisk</option>
-                <option value="66">Uisk II</option>
-                <option value="67">Uisk II SP</option>
-              </optgroup>
-              <optgroup label="Vyzov">
-                <option  value="68">Vyzov</option>
-              </optgroup>
-              <optgroup label="Warlus">
-                <option value="69">Warlus</option>
-                <option value="70">Warlus LW</option>
-                <option value="71">Strife</option>
-                <option value="72">Strife 2</option>
-              </optgroup>
-              <optgroup label="Zenith">
-                <option value="73">Zenith</option>
-                <option value="74">Zeria</option>
-                <option value="75">Zenith DV</option>
-                <option value="76">Zenith RV</option>
-              </optgroup>
-              <optgroup label="Glen's Zenith">
-                <option value="77">Glen's Zenith</option>
-              </optgroup>
-              <optgroup label="Zenith RV2">
-                <option value="78">Zenith RV2</option>
-                <option value="79">Dasler Claw</option>
-                <option value="80">Dasler Claw 0</option>
-              </optgroup>
-            </select>
-          </div>
-          <div class="part_selector">
-            <p>Legs</p>
-            <select name="Legs" id="legsID">
-              <option value="none" selected>None</option>
-              <optgroup label="Cheyenne">
-                <option value="0">Cheyenne</option>
-                <option value="1">Cheyenne F</option>
-                <option value="2">Cheyenne TX</option>
-              </optgroup>
-              <optgroup label="Crustacia">
-                <option value="3">Crustacia</option>
-                <option value="4">Cancer</option>
-                <option value="5">Carapace</option>
-              </optgroup>
-              <optgroup label="Desmatz">
-                <option value="6">Desmatz N</option>
-                <option value="7">Desmatz M</option>
-                <option value="8">Death Mantis DD</option>
-                <option value="9">Argiope S</option>
-                <option value="10">Argiope L</option>
-              </optgroup>
-              <optgroup label="Eldos">
-                <option value="11">Eldos</option>
-                <option value="12">Eldos A</option>
-                <option value="13">Eldos B</option>
-                <option value="14">Eldos 2</option>
-              </optgroup>
-              <optgroup label="Enyo">
-                <option value="15">Enyo</option>
-                <option value="16">Enyo LT</option>
-                <option value="17">Enyo 2</option>
-                <option value="18">Enyo 3</option>
-              </optgroup>
-              <optgroup label="Frost">
-                <option value="19">Frost</option>
-                <option value="20">Frost HW</option>
-                <option value="21">Blizzaia</option>
-                <option value="22">Blizzaia L</option>
-              </optgroup>
-              <optgroup label="Giza">
-                <option value="23">Giza</option>
-                <option value="24">Giza LW</option>
-                <option value="25">Giza 2</option>
-                <option value="26">Bes A</option>
-                <option value="27">Bes B</option>
-              </optgroup>
-              <optgroup label="Grapple">
-                <option value="28">Grapple</option>
-                <option value="29">Grapple F</option>
-                <option value="30">Grapple FS</option>
-                <option value="31">Grapple FS2</option>
-                <option value="32">Grapple EX</option>
-                <option value="33">Grapple X</option>
-                <option value="34">Grapple X2</option>
-              </optgroup>
-              <optgroup label="Grille Sechs">
-                <option value="35">Grille Sechs</option>
-                <option value="36">Grille Sechs D</option>
-                <option value="37">Grille Sechs H</option>
-              </optgroup>
-              <optgroup label="Gust">
-                <option value="38">Gust</option>
-                <option value="39">Storm</option>
-                <option value="40">Vapor</option>
-                <option value="41">Vapor 2</option>
-              </optgroup>
-              <optgroup label="Kyojun">
-                <option value="42">Kyojun</option>
-                <option value="43">Kyojun LT</option>
-                <option value="44">Kyojun A</option>
-                <option value="45">Kyojun B</option>
-              </optgroup>
-              <optgroup label="Luftrauber">
-                <option value="46">Luftrauber</option>
-                <option value="47">Luftpanger</option>
-                <option value="48">Luftritter</option>
-              </optgroup>
-              <optgroup label="Numsekar">
-                <option value="49">Numsecar</option>
-                <option value="50">Enforcer</option>
-                <option value="51">Mungoss</option>
-                <option value="52">Mungoss G</option>
-              </optgroup>
-              <optgroup label="Recson">
-                <option value="53">Recson</option>
-                <option value="54">U-Recson</option>
-                <option value="55">H-Recson</option>
-                <option value="56">H-Recson AP</option>
-              </optgroup>
-              <optgroup label="Schakal">
-                <option value="57">Schakal</option>
-                <option value="58">Schakal LW</option>
-                <option value="59">Schakal B</option>
-                <option value="60">Schakal C</option>
-              </optgroup>
-              <optgroup label="Scintilla">
-                <option value="61">Scintilla</option>
-                <option value="62">Scintilla LW</option>
-                <option value="63">Black Knight</option>
-                <option value="64">Black Knight 2</option>
-              </optgroup>
-              <optgroup label="Uisk">
-                <option value="65">Uisk</option>
-                <option value="66">Uisk II</option>
-                <option value="67">Uisk II SP</option>
-              </optgroup>
-              <optgroup label="Vyzov">
-                <option  value="68">Vyzov</option>
-              </optgroup>
-              <optgroup label="Warlus">
-                <option value="69">Warlus</option>
-                <option value="70">Warlus LW</option>
-                <option value="71">Strife</option>
-                <option value="72">Strife 2</option>
-              </optgroup>
-              <optgroup label="Zenith">
-                <option value="73">Zenith</option>
-                <option value="74">Zeria</option>
-                <option value="75">Zenith DV</option>
-                <option value="76">Zenith RV</option>
-              </optgroup>
-              <optgroup label="Glen's Zenith">
-                <option value="77">Glen's Zenith</option>
-              </optgroup>
-              <optgroup label="Bauers">
-                <option value="78">Bauers</option>
-                <option value="79">Bauers HS</option>
-                <option value="80">Bauers F</option>
-              </optgroup>
-              <optgroup label="Coga R2">
-                <option value="81">Coga R2</option>
-                <option value="82">Coga R2 HS</option>
-                <option value="83">Coga R2 mk.II</option>
-              </optgroup>
-            </select>
-          </div>
-          <div class="part_selector">
-            <p>Backpack</p>
-            <select name="Backpack" id="backpackID">
-              <option value="none" selected>None</option>
-              <option value="0">Turbo</option>
-              <option value="1">Item Turbo</option>
-              <option value="2">Turbo Item</option>
-              <option value="3">Repair</option>
-              <option value="4">Repair Light</option>
-              <option value="5">EMP</option>
-              <option value="6">EMP Repair</option>
-              <option value="7">Repair EMP</option>
-              <option value="8">Sensor EMP</option>
-              <option value="9">Sensor</option>
-            </select>
-          </div>
-          <div class="part_selector">
-            <p>L.Hand</p>
-            <select name="Left Hand" id="lHandID">
-              <option value="none" selected>None</option>
-              <optgroup label="Machine Guns">
-                <option value="0">Artassaut</option>
-                <option value="1">Artassaut C</option>
-                <option value="2">Artassaut SP</option>
-                <option value="3">Cemetery</option>
-                <option value="4">Cemetery LW</option>
-                <option value="5">Cemetery 10</option>
-                <option value="6">Chronik</option>
-                <option value="7">Chronik 10</option>
-                <option value="8">Chronik 20</option>
-                <option value="9">Grave</option>
-                <option value="10">Grave 2</option>
-                <option value="11">Grave SP</option>
-                <option value="12">Leosocial</option>
-                <option value="13">Leosocial SD</option>
-                <option value="14">Leosocial L</option>
-                <option value="15">Raptor</option>
-                <option value="16">Raptor EX</option>
-                <option value="17">Raptor FX</option>
-              </optgroup>
-              <optgroup label="Shotguns">
-                <option value="18">Catsray</option>
-                <option value="19">Catsray L</option>
-                <option value="20">Catsray XX</option>
-                <option value="21">Covet</option>
-                <option value="22">Peak Gaza</option>
-                <option value="23">Covet V200</option>
-                <option value="24">Gale</option>
-                <option value="25">Gale LC</option>
-                <option value="26">Gale II</option>
-                <option value="27">Girino</option>
-                <option value="28">Girino HC</option>
-                <option value="29">Girino 2</option>
-                <option value="30">Kirishima 55</option>
-                <option value="31">Kirishima 55 SD</option>
-                <option value="32">Kirishima 58</option>
-                <option value="33">State</option>
-                <option value="34">State EX</option>
-                <option value="35">State EX-AC</option>
-              </optgroup>
-              <optgroup label="Flamethrowers">
-                <option value="36">Fire Ant</option>
-                <option value="37">Fire Ant F</option>
-                <option value="38">Fire Ant S</option>
-                <option value="39">Heat Rat</option>
-                <option value="40">Heat Rat S</option>
-                <option value="41">Heat Rat EX</option>
-                <option value="42">Hot River</option>
-                <option value="43">Hot River HG</option>
-                <option value="44">Hot River SD</option>
-                <option value="45">Warmer</option>
-                <option value="46">Warmer LC</option>
-                <option value="47">Warmer F1</option>
-                <option value="48">Warmer F2</option>
-              </optgroup>
-              <optgroup label="Gatling Guns">
-                <option value="49">FV-24</option>
-                <option value="50">FV-24A</option>
-                <option value="51">FV-24B</option>
-                <option value="52">FV-24C</option>
-                <option value="53">Burchel</option>
-                <option value="54">Burchel F</option>
-                <option value="55">Burchel FX</option>
-                <option value="56">Fujan</option>
-                <option value="57">Fujan M200</option>
-                <option value="58">Fujan M500</option>
-                <option value="59">Glaux</option>
-                <option value="60">Glaux B</option>
-                <option value="61">Glaux 2</option>
-                <option value="62">Leostun</option>
-                <option value="63">Leostun D</option>
-                <option value="64">Leostun E</option>
-                <option value="65">Uhlan</option>
-                <option value="66">Uhlan L</option>
-                <option value="67">Uhlan 20</option>
-                <option value="68">Uhlan 80</option>
-              </optgroup>
-              <optgroup label="Sniper Rifles">
-                <option value="69">Firebird</option>
-                <option value="70">Firebird 2</option>
-                <option value="71">Firebird V</option>
-                <option value="72">Glowtusk</option>
-                <option value="73">Glowtusk AS</option>
-                <option value="74">Glowtusk SS</option>
-                <option value="75">Ibis</option>
-                <option value="76">Ibis P</option>
-                <option value="77">Ibis 2</option>
-                <option value="78">Iguchi Type 5</option>
-                <option value="79">Iguchi Type 502</option>
-                <option value="80">Iguchi Type 503</option>
-                <option value="81">Srab</option>
-                <option value="82">Srab DH</option>
-                <option value="83">Srab B</option>
-                <option value="84">Winee</option>
-                <option value="85">Winee R</option>
-                <option value="86">Winee RR</option>
-              </optgroup>
-              <optgroup label="Bazookas">
-                <option value="87">Banish</option>
-                <option value="88">Banish CH</option>
-                <option value="89">Banish 3</option>
-                <option value="90">BE-11</option>
-                <option value="91">BE-11 SD</option>
-                <option value="92">BE-11 XP</option>
-                <option value="93">Boa</option>
-                <option value="94">Boa MI</option>
-                <option value="95">Boa 36</option>
-                <option value="96">Boa 44</option>
-                <option value="97">Burgiba</option>
-                <option value="98">Burgiba 2</option>
-                <option value="99">Burgiba UL</option>
-                <option value="100">Gnautz</option>
-                <option value="101">Gnautz 3</option>
-                <option value="102">Gnautz 10</option>
-                <option value="103">Grom</option>
-                <option value="104">Grom K</option>
-                <option value="105">Grom II</option>
-                <option value="106">Grom III</option>
-              </optgroup>
-              <optgroup label="Knuckles">
-                <option value="107">Bone Buster</option>
-                <option value="108">Bone Buster FM</option>
-                <option value="109">Rock Buster</option>
-                <option value="110">Steel Buster</option>
-                <option value="111">Double Nail</option>
-                <option value="112">Double Fang</option>
-                <option value="113">Double Blade</option>
-                <option value="114">Iron Lump</option>
-                <option value="115">Iron Lump F</option>
-                <option value="116">Iron Lump B</option>
-                <option value="117">Iron Lump DX</option>
-                <option value="118">Soul Buster SD</option>
-                <option value="119">Soul Buster XF</option>
-                <option value="120">Soul Buster 2</option>
-              </optgroup>
-              <optgroup label="Pile Bunkers">
-                <option value="121">Battle Tusk SD</option>
-                <option value="122">Battle Tusk JF</option>
-                <option value="123">Battle Tusk 2</option>
-                <option value="124">Heavy Pile</option>
-                <option value="125">Heavy Pile F</option>
-                <option value="126">Heavy Pile SD</option>
-                <option value="127">Last Stake</option>
-                <option value="128">Last Stake F</option>
-                <option value="129">Last Stake S</option>
-                <option value="130">Last Stake SP</option>
-                <option value="131">Press Needle</option>
-                <option value="132">Press Needle FM</option>
-                <option value="133">Hot Needle</option>
-                <option value="134">Press Sting</option>
-              </optgroup>
-              <optgroup label="Rods">
-                <option value="135">Crusader SD</option>
-                <option value="136">Crusader II F</option>
-                <option value="137">Crusader II EX</option>
-                <option value="138">F-1 Hand Rod</option>
-                <option value="139">F-1 Hand Rod F</option>
-                <option value="140">F-4 Hand Rod</option>
-                <option value="141">F-5 Hand Rod</option>
-                <option value="142">Keen Saber</option>
-                <option value="143">Keen Saber F</option>
-                <option value="144">Keen Saber G</option>
-                <option value="145">Keen Saber X</option>
-                <option value="146">Ogon</option>
-                <option value="147">Ogon F</option>
-                <option value="148">Ogon S</option>
-              </optgroup>
-              <optgroup label="Shields">
-                <option value="149">Light Shield</option>
-                <option value="150">Light Shield ARG</option>
-                <option value="151">Light Shield 2</option>
-                <option value="152">SN</option>
-                <option value="153">SN-AMS</option>
-                <option value="154">SN-SD</option>
-                <option value="155">SP06</option>
-                <option value="156">SP06-V</option>
-                <option value="157">SP06-SD</option>
-                <option value="158">WS</option>
-                <option value="159">WS-AMS</option>
-                <option value="160">WS-100</option>
-                <option value="161">WS-200AMS</option>
-              </optgroup>
-            </select>
-          </div>
-          <div class="part_selector">
-            <p>R.Hand</p>
             <select name="Right Hand" id="rHandID">
               <option value="none" selected>None</option>
               <optgroup label="Machine Guns">
@@ -944,133 +734,327 @@
             </select>
           </div>
           <div class="part_selector">
-            <p>L.Shoulder</p>
-            <select name="Left Shoulder" id="lShoulderID">
+            <select name="Legs" id="legsID">
               <option value="none" selected>None</option>
-              <optgroup label="MIssile Launchers">
-                <option value="0">Donkey</option>
-                <option value="1">Donkey L</option>
-                <option value="2">Donkey DX</option>
-                <option value="3">Donkey DX2</option>
-                <option value="4">Goldias</option>
-                <option value="5">Goldias S</option>
-                <option value="6">Goldias L</option>
-                <option value="7">Magic Box</option>
-                <option value="8">Magic Box 2A</option>
-                <option value="9">Magic Box 2B</option>
-                <option value="10">MGR</option>
-                <option value="11">MGR-M</option>
-                <option value="12">MGR-2</option>
-                <option value="13">MGR-3</option>
-                <option value="14">PIZ 3</option>
-                <option value="15">PIZ 3E</option>
-                <option value="16">PIZ 4</option>
-                <option value="17">PIZ 4R</option>
-                <option value="18">Sunowl</option>
-                <option value="19">Sundog</option>
-                <option value="20">Sunglow</option>
+              <optgroup label="Cheyenne">
+                <option value="0">Cheyenne</option>
+                <option value="1">Cheyenne F</option>
+                <option value="2">Cheyenne TX</option>
               </optgroup>
-              <optgroup label="Grenade Launchers">
-                <option value="21">Iguchi Type 82</option>
-                <option value="22">Iguchi Type 82A</option>
-                <option value="23">Iguchi Type 82B</option>
-                <option value="24">Lazy Horn</option>
-                <option value="25">Bar Horn</option>
-                <option value="26">Wis Horn</option>
-                <option value="27">Skua</option>
-                <option value="28">Skua G</option>
-                <option value="29">High Skua</option>
-                <option value="30">Thunderbolt</option>
-                <option value="31">Thunderbolt 2</option>
-                <option value="32">Thunderbolt 3</option>
+              <optgroup label="Crustacia">
+                <option value="3">Crustacia</option>
+                <option value="4">Cancer</option>
+                <option value="5">Carapace</option>
               </optgroup>
-              <optgroup label="Rocket Launchers">
-                <option value="33">Albatross</option>
-                <option value="34">Albatross R</option>
-                <option value="35">Albatross S</option>
-                <option value="36">Egret</option>
-                <option value="37">Egret E</option>
-                <option value="38">Egret F</option>
-                <option value="39">Galbados</option>
-                <option value="40">Galbados 2</option>
-                <option value="41">Galbados 3</option>
-                <option value="42">Wildgoose</option>
-                <option value="43">Wildgoose 2</option>
-                <option value="44">Wildgoose 3</option>
+              <optgroup label="Desmatz">
+                <option value="6">Desmatz N</option>
+                <option value="7">Desmatz M</option>
+                <option value="8">Death Mantis DD</option>
+                <option value="9">Argiope S</option>
+                <option value="10">Argiope L</option>
+              </optgroup>
+              <optgroup label="Eldos">
+                <option value="11">Eldos</option>
+                <option value="12">Eldos A</option>
+                <option value="13">Eldos B</option>
+                <option value="14">Eldos 2</option>
+              </optgroup>
+              <optgroup label="Enyo">
+                <option value="15">Enyo</option>
+                <option value="16">Enyo LT</option>
+                <option value="17">Enyo 2</option>
+                <option value="18">Enyo 3</option>
+              </optgroup>
+              <optgroup label="Frost">
+                <option value="19">Frost</option>
+                <option value="20">Frost HW</option>
+                <option value="21">Blizzaia</option>
+                <option value="22">Blizzaia L</option>
+              </optgroup>
+              <optgroup label="Giza">
+                <option value="23">Giza</option>
+                <option value="24">Giza LW</option>
+                <option value="25">Giza 2</option>
+                <option value="26">Bes A</option>
+                <option value="27">Bes B</option>
+              </optgroup>
+              <optgroup label="Grapple">
+                <option value="28">Grapple</option>
+                <option value="29">Grapple F</option>
+                <option value="30">Grapple FS</option>
+                <option value="31">Grapple FS2</option>
+                <option value="32">Grapple EX</option>
+                <option value="33">Grapple X</option>
+                <option value="34">Grapple X2</option>
+              </optgroup>
+              <optgroup label="Grille Sechs">
+                <option value="35">Grille Sechs</option>
+                <option value="36">Grille Sechs D</option>
+                <option value="37">Grille Sechs H</option>
+              </optgroup>
+              <optgroup label="Gust">
+                <option value="38">Gust</option>
+                <option value="39">Storm</option>
+                <option value="40">Vapor</option>
+                <option value="41">Vapor 2</option>
+              </optgroup>
+              <optgroup label="Kyojun">
+                <option value="42">Kyojun</option>
+                <option value="43">Kyojun LT</option>
+                <option value="44">Kyojun A</option>
+                <option value="45">Kyojun B</option>
+              </optgroup>
+              <optgroup label="Luftrauber">
+                <option value="46">Luftrauber</option>
+                <option value="47">Luftpanger</option>
+                <option value="48">Luftritter</option>
+              </optgroup>
+              <optgroup label="Numsekar">
+                <option value="49">Numsecar</option>
+                <option value="50">Enforcer</option>
+                <option value="51">Mungoss</option>
+                <option value="52">Mungoss G</option>
+              </optgroup>
+              <optgroup label="Recson">
+                <option value="53">Recson</option>
+                <option value="54">U-Recson</option>
+                <option value="55">H-Recson</option>
+                <option value="56">H-Recson AP</option>
+              </optgroup>
+              <optgroup label="Schakal">
+                <option value="57">Schakal</option>
+                <option value="58">Schakal LW</option>
+                <option value="59">Schakal B</option>
+                <option value="60">Schakal C</option>
+              </optgroup>
+              <optgroup label="Scintilla">
+                <option value="61">Scintilla</option>
+                <option value="62">Scintilla LW</option>
+                <option value="63">Black Knight</option>
+                <option value="64">Black Knight 2</option>
+              </optgroup>
+              <optgroup label="Uisk">
+                <option value="65">Uisk</option>
+                <option value="66">Uisk II</option>
+                <option value="67">Uisk II SP</option>
+              </optgroup>
+              <optgroup label="Vyzov">
+                <option  value="68">Vyzov</option>
+              </optgroup>
+              <optgroup label="Warlus">
+                <option value="69">Warlus</option>
+                <option value="70">Warlus LW</option>
+                <option value="71">Strife</option>
+                <option value="72">Strife 2</option>
+              </optgroup>
+              <optgroup label="Zenith">
+                <option value="73">Zenith</option>
+                <option value="74">Zeria</option>
+                <option value="75">Zenith DV</option>
+                <option value="76">Zenith RV</option>
+              </optgroup>
+              <optgroup label="Glen's Zenith">
+                <option value="77">Glen's Zenith</option>
+              </optgroup>
+              <optgroup label="Bauers">
+                <option value="78">Bauers</option>
+                <option value="79">Bauers HS</option>
+                <option value="80">Bauers F</option>
+              </optgroup>
+              <optgroup label="Coga R2">
+                <option value="81">Coga R2</option>
+                <option value="82">Coga R2 HS</option>
+                <option value="83">Coga R2 mk.II</option>
               </optgroup>
             </select>
           </div>
           <div class="part_selector">
-            <p>R.Shoulder</p>
-            <select name="Right Shoulder" id="rShoulderID">
+            <select name="Left Hand" id="lHandID">
               <option value="none" selected>None</option>
-              <optgroup label="MIssile Launchers">
-                <option value="0">Donkey</option>
-                <option value="1">Donkey L</option>
-                <option value="2">Donkey DX</option>
-                <option value="3">Donkey DX2</option>
-                <option value="4">Goldias</option>
-                <option value="5">Goldias S</option>
-                <option value="6">Goldias L</option>
-                <option value="7">Magic Box</option>
-                <option value="8">Magic Box 2A</option>
-                <option value="9">Magic Box 2B</option>
-                <option value="10">MGR</option>
-                <option value="11">MGR-M</option>
-                <option value="12">MGR-2</option>
-                <option value="13">MGR-3</option>
-                <option value="14">PIZ 3</option>
-                <option value="15">PIZ 3E</option>
-                <option value="16">PIZ 4</option>
-                <option value="17">PIZ 4R</option>
-                <option value="18">Sunowl</option>
-                <option value="19">Sundog</option>
-                <option value="20">Sunglow</option>
+              <optgroup label="Machine Guns">
+                <option value="0">Artassaut</option>
+                <option value="1">Artassaut C</option>
+                <option value="2">Artassaut SP</option>
+                <option value="3">Cemetery</option>
+                <option value="4">Cemetery LW</option>
+                <option value="5">Cemetery 10</option>
+                <option value="6">Chronik</option>
+                <option value="7">Chronik 10</option>
+                <option value="8">Chronik 20</option>
+                <option value="9">Grave</option>
+                <option value="10">Grave 2</option>
+                <option value="11">Grave SP</option>
+                <option value="12">Leosocial</option>
+                <option value="13">Leosocial SD</option>
+                <option value="14">Leosocial L</option>
+                <option value="15">Raptor</option>
+                <option value="16">Raptor EX</option>
+                <option value="17">Raptor FX</option>
               </optgroup>
-              <optgroup label="Grenade Launchers">
-                <option value="21">Iguchi Type 82</option>
-                <option value="22">Iguchi Type 82A</option>
-                <option value="23">Iguchi Type 82B</option>
-                <option value="24">Lazy Horn</option>
-                <option value="25">Bar Horn</option>
-                <option value="26">Wis Horn</option>
-                <option value="27">Skua</option>
-                <option value="28">Skua G</option>
-                <option value="29">High Skua</option>
-                <option value="30">Thunderbolt</option>
-                <option value="31">Thunderbolt 2</option>
-                <option value="32">Thunderbolt 3</option>
+              <optgroup label="Shotguns">
+                <option value="18">Catsray</option>
+                <option value="19">Catsray L</option>
+                <option value="20">Catsray XX</option>
+                <option value="21">Covet</option>
+                <option value="22">Peak Gaza</option>
+                <option value="23">Covet V200</option>
+                <option value="24">Gale</option>
+                <option value="25">Gale LC</option>
+                <option value="26">Gale II</option>
+                <option value="27">Girino</option>
+                <option value="28">Girino HC</option>
+                <option value="29">Girino 2</option>
+                <option value="30">Kirishima 55</option>
+                <option value="31">Kirishima 55 SD</option>
+                <option value="32">Kirishima 58</option>
+                <option value="33">State</option>
+                <option value="34">State EX</option>
+                <option value="35">State EX-AC</option>
               </optgroup>
-              <optgroup label="Rocket Launchers">
-                <option value="33">Albatross</option>
-                <option value="34">Albatross R</option>
-                <option value="35">Albatross S</option>
-                <option value="36">Egret</option>
-                <option value="37">Egret E</option>
-                <option value="38">Egret F</option>
-                <option value="39">Galbados</option>
-                <option value="40">Galbados 2</option>
-                <option value="41">Galbados 3</option>
-                <option value="42">Wildgoose</option>
-                <option value="43">Wildgoose 2</option>
-                <option value="44">Wildgoose 3</option>
+              <optgroup label="Flamethrowers">
+                <option value="36">Fire Ant</option>
+                <option value="37">Fire Ant F</option>
+                <option value="38">Fire Ant S</option>
+                <option value="39">Heat Rat</option>
+                <option value="40">Heat Rat S</option>
+                <option value="41">Heat Rat EX</option>
+                <option value="42">Hot River</option>
+                <option value="43">Hot River HG</option>
+                <option value="44">Hot River SD</option>
+                <option value="45">Warmer</option>
+                <option value="46">Warmer LC</option>
+                <option value="47">Warmer F1</option>
+                <option value="48">Warmer F2</option>
+              </optgroup>
+              <optgroup label="Gatling Guns">
+                <option value="49">FV-24</option>
+                <option value="50">FV-24A</option>
+                <option value="51">FV-24B</option>
+                <option value="52">FV-24C</option>
+                <option value="53">Burchel</option>
+                <option value="54">Burchel F</option>
+                <option value="55">Burchel FX</option>
+                <option value="56">Fujan</option>
+                <option value="57">Fujan M200</option>
+                <option value="58">Fujan M500</option>
+                <option value="59">Glaux</option>
+                <option value="60">Glaux B</option>
+                <option value="61">Glaux 2</option>
+                <option value="62">Leostun</option>
+                <option value="63">Leostun D</option>
+                <option value="64">Leostun E</option>
+                <option value="65">Uhlan</option>
+                <option value="66">Uhlan L</option>
+                <option value="67">Uhlan 20</option>
+                <option value="68">Uhlan 80</option>
+              </optgroup>
+              <optgroup label="Sniper Rifles">
+                <option value="69">Firebird</option>
+                <option value="70">Firebird 2</option>
+                <option value="71">Firebird V</option>
+                <option value="72">Glowtusk</option>
+                <option value="73">Glowtusk AS</option>
+                <option value="74">Glowtusk SS</option>
+                <option value="75">Ibis</option>
+                <option value="76">Ibis P</option>
+                <option value="77">Ibis 2</option>
+                <option value="78">Iguchi Type 5</option>
+                <option value="79">Iguchi Type 502</option>
+                <option value="80">Iguchi Type 503</option>
+                <option value="81">Srab</option>
+                <option value="82">Srab DH</option>
+                <option value="83">Srab B</option>
+                <option value="84">Winee</option>
+                <option value="85">Winee R</option>
+                <option value="86">Winee RR</option>
+              </optgroup>
+              <optgroup label="Bazookas">
+                <option value="87">Banish</option>
+                <option value="88">Banish CH</option>
+                <option value="89">Banish 3</option>
+                <option value="90">BE-11</option>
+                <option value="91">BE-11 SD</option>
+                <option value="92">BE-11 XP</option>
+                <option value="93">Boa</option>
+                <option value="94">Boa MI</option>
+                <option value="95">Boa 36</option>
+                <option value="96">Boa 44</option>
+                <option value="97">Burgiba</option>
+                <option value="98">Burgiba 2</option>
+                <option value="99">Burgiba UL</option>
+                <option value="100">Gnautz</option>
+                <option value="101">Gnautz 3</option>
+                <option value="102">Gnautz 10</option>
+                <option value="103">Grom</option>
+                <option value="104">Grom K</option>
+                <option value="105">Grom II</option>
+                <option value="106">Grom III</option>
+              </optgroup>
+              <optgroup label="Knuckles">
+                <option value="107">Bone Buster</option>
+                <option value="108">Bone Buster FM</option>
+                <option value="109">Rock Buster</option>
+                <option value="110">Steel Buster</option>
+                <option value="111">Double Nail</option>
+                <option value="112">Double Fang</option>
+                <option value="113">Double Blade</option>
+                <option value="114">Iron Lump</option>
+                <option value="115">Iron Lump F</option>
+                <option value="116">Iron Lump B</option>
+                <option value="117">Iron Lump DX</option>
+                <option value="118">Soul Buster SD</option>
+                <option value="119">Soul Buster XF</option>
+                <option value="120">Soul Buster 2</option>
+              </optgroup>
+              <optgroup label="Pile Bunkers">
+                <option value="121">Battle Tusk SD</option>
+                <option value="122">Battle Tusk JF</option>
+                <option value="123">Battle Tusk 2</option>
+                <option value="124">Heavy Pile</option>
+                <option value="125">Heavy Pile F</option>
+                <option value="126">Heavy Pile SD</option>
+                <option value="127">Last Stake</option>
+                <option value="128">Last Stake F</option>
+                <option value="129">Last Stake S</option>
+                <option value="130">Last Stake SP</option>
+                <option value="131">Press Needle</option>
+                <option value="132">Press Needle FM</option>
+                <option value="133">Hot Needle</option>
+                <option value="134">Press Sting</option>
+              </optgroup>
+              <optgroup label="Rods">
+                <option value="135">Crusader SD</option>
+                <option value="136">Crusader II F</option>
+                <option value="137">Crusader II EX</option>
+                <option value="138">F-1 Hand Rod</option>
+                <option value="139">F-1 Hand Rod F</option>
+                <option value="140">F-4 Hand Rod</option>
+                <option value="141">F-5 Hand Rod</option>
+                <option value="142">Keen Saber</option>
+                <option value="143">Keen Saber F</option>
+                <option value="144">Keen Saber G</option>
+                <option value="145">Keen Saber X</option>
+                <option value="146">Ogon</option>
+                <option value="147">Ogon F</option>
+                <option value="148">Ogon S</option>
+              </optgroup>
+              <optgroup label="Shields">
+                <option value="149">Light Shield</option>
+                <option value="150">Light Shield ARG</option>
+                <option value="151">Light Shield 2</option>
+                <option value="152">SN</option>
+                <option value="153">SN-AMS</option>
+                <option value="154">SN-SD</option>
+                <option value="155">SP06</option>
+                <option value="156">SP06-V</option>
+                <option value="157">SP06-SD</option>
+                <option value="158">WS</option>
+                <option value="159">WS-AMS</option>
+                <option value="160">WS-100</option>
+                <option value="161">WS-200AMS</option>
               </optgroup>
             </select>
           </div>
-        </div>
-      </section>
-  
-      <section class="wanzer_container">
-        <h4>WANZER</h4>
-        <div class="stats_grid" id="info">
-          <div class="weightToOutput" id="W_O">W/O: 0/0 FREE: 0</div>
-          <div class="WObar1"><div id="weightToOutputBar"></div></div>
-          <div class="grid_item" id="wRShoulder"></div>
-          <div class="grid_item" id="wBackpack"></div>
-          <div class="grid_item" id="wLShoulder"></div>
-          <div class="grid_item" id="wRArm"></div>
-          <div class="grid_item" id="wBody"></div>
-          <div class="grid_item" id="wLArm"></div>
           <div class="grid_item" id="wRHand"></div>
           <div class="grid_item" id="wLegs"></div>
           <div class="grid_item" id="wLHand"></div>
