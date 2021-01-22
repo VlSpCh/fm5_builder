@@ -165,6 +165,7 @@ select {
 
     body {
       font-size: 80%;
+      font-weight: lighter;
     }
    
     .header_container {
@@ -177,6 +178,14 @@ select {
     .main_container {
       justify-content: flex-start;
     }
+
+    .wanzer_container {
+      width: 24rem;
+      height: 100%;
+      border: solid 0.2rem #999999;
+      padding: 0.5rem;
+    }
+
     .weightToOutput {
       grid-column: 1 / span 1;
       border: solid 0.1rem black;
