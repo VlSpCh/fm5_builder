@@ -165,7 +165,7 @@ select {
 
     body {
       font-size: 80%;
-      font-weight: lighter;
+      font-weight: 300;
     }
    
     .header_container {
