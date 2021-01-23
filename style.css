@@ -166,6 +166,7 @@ select {
 
     body {
       font-size: 70%;
+      margin-left: 0.1rem;
     }
    
     .header_container {
@@ -191,9 +192,8 @@ select {
       border: solid 0.1rem black;
       margin: 0.2rem;
       padding: 0.05rem;
-      padding-top: 0.35rem;
+      padding-top: 0.16rem;
       font-size: 80%;
-
     }
 
     select {
@@ -203,7 +203,7 @@ select {
     .stats_grid {
       display: grid;
       grid-template-columns: 8rem 8rem 8rem;
-      grid-template-rows: 2rem 2rem 8rem 2rem 8rem 2rem 8rem;
+      grid-template-rows: 1.6rem 2rem 8rem 2rem 8rem 2rem 8rem;
     }
 
     .grid_item {
