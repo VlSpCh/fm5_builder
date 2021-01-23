@@ -1,9 +1,10 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Arial Narrow", "Roboto Condensed", "PT Sans Narrow", Arial, sans-serif;
+  font-family: "Roboto Condensed", "PT Sans Narrow", sans-serif;
   background-color: #f5f7f8;
   overflow: visible;
+  font-size: 0.88rem;
 }
 
 h2 {
@@ -65,8 +66,8 @@ select {
   border: solid 0.1rem black;
   margin: 0.2rem;
   padding: 0.1rem;
-  padding-top: 0.19rem;
-  font-size: 0.8rem;
+  padding-top: 0.25rem;
+  font-size: 0.7rem;
   text-align: center;
   background-color: white;
 }
@@ -140,7 +141,7 @@ select {
 }
 
 #wLegs {
-  font-size: 95%;
+  font-size: 100%;
   background: url(assets/fm5builderbackgroundicons_legs.png);
   background-size: 100%;
   background-color: #ffc4c0;
@@ -164,8 +165,7 @@ select {
  @media (max-width:500px) {
 
     body {
-      font-size: 80%;
-      font-weight: 300;
+      font-size: 70%;
     }
    
     .header_container {
@@ -191,10 +191,9 @@ select {
       border: solid 0.1rem black;
       margin: 0.2rem;
       padding: 0.05rem;
-      padding-top: 0.32rem;
-      font-size: 0.6rem;
-      text-align: center;
-      background-color: white;
+      padding-top: 0.35rem;
+      font-size: 80%;
+
     }
 
     select {
