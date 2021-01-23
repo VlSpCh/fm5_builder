@@ -166,7 +166,7 @@ select {
 
     body {
       font-size: 70%;
-      margin-left: 0.1rem;
+      margin-left: 0.2rem;
     }
    
     .header_container {
@@ -198,6 +198,7 @@ select {
 
     select {
       width: 100%;
+      font-size: 95%;
     }
 
     .stats_grid {

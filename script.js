@@ -4585,7 +4585,7 @@ const weaponHand = [
   maxAcc: 62,
   range: `2-6`,
   aoe: 2,
-  skill: `Minimum Range -1`,
+  skill: `Min Range -1`,
   price: 3390}
   ,
   {id: 90,
@@ -4660,7 +4660,7 @@ const weaponHand = [
   maxAcc: 52,
   range: `2-6`,
   aoe: 2,
-  skill: `Minimum Range -1`,
+  skill: `Min Range -1`,
   price: 4310}
   ,
   {id: 95,
@@ -4675,7 +4675,7 @@ const weaponHand = [
   maxAcc: 52,
   range: `2-7`,
   aoe: 2,
-  skill: `Minimum Range -1`,
+  skill: `Min Range -1`,
   price: 4310}
   ,
   {id: 96,
@@ -4690,7 +4690,7 @@ const weaponHand = [
   maxAcc: 57,
   range: `1-6`,
   aoe: 2,
-  skill: `Minimum Range -2`,
+  skill: `Min Range -2`,
   price: 4310}
   ,
   {id: 97,
@@ -4765,7 +4765,7 @@ const weaponHand = [
   maxAcc: 60,
   range: `2-6`,
   aoe: 2,
-  skill: `Minimum Range -1`,
+  skill: `Min Range -1`,
   price: 4460}
   ,
   {id: 102,
@@ -4810,7 +4810,7 @@ const weaponHand = [
   maxAcc: 50,
   range: `2-7`,
   aoe: 2,
-  skill: `Minimum Range -1`,
+  skill: `Min Range -1`,
   price: 5390}
   ,
   {id: 105,
@@ -4825,7 +4825,7 @@ const weaponHand = [
   maxAcc: 50,
   range: `2-8`,
   aoe: 2,
-  skill: `Minimum Range -1`,
+  skill: `Min Range -1`,
   price: 5390}
   ,
   {id: 106,
@@ -4840,7 +4840,7 @@ const weaponHand = [
   maxAcc: 55,
   range: `1-7`,
   aoe: 2,
-  skill: `Minimum Range -2`,
+  skill: `Min Range -2`,
   price: 5390}
   ,
   {id: 107,
@@ -5554,7 +5554,7 @@ const weaponShoulder = [
   apCost: 26,
   ammo: 4,
   range: `4-8`,
-  skill: `Minimum Range -1`,
+  skill: `Min Range -1`,
   price: 5080}
   ,
   {id: 6,
@@ -5602,7 +5602,7 @@ const weaponShoulder = [
   apCost: 26,
   ammo: 3,
   range: `5-8`,
-  skill: `Minimum Range -1`,
+  skill: `Min Range -1`,
   price: 6770}
   ,
   {id: 10,
@@ -5626,7 +5626,7 @@ const weaponShoulder = [
   apCost: 26,
   ammo: 7,
   range: `5-8`,
-  skill: `Minimum Range -1`,
+  skill: `Min Range -1`,
   price: 5080}
   ,
   {id: 12,
@@ -5638,7 +5638,7 @@ const weaponShoulder = [
   apCost: 26,
   ammo: 7,
   range: `5-8`,
-  skill: `Minimum Range -1`,
+  skill: `Min Range -1`,
   price: 5080}
   ,
   {id: 13,
@@ -5686,7 +5686,7 @@ const weaponShoulder = [
   apCost: 26,
   ammo: 4,
   range: `5-8`,
-  skill: `Minimum Range -1`,
+  skill: `Min Range -1`,
   price: 4230}
   ,
   {id: 17,
@@ -5698,7 +5698,7 @@ const weaponShoulder = [
   apCost: 26,
   ammo: 3,
   range: `4-8`,
-  skill: `Minimum Range -2
+  skill: `Min Range -2
   Auto Reload`,
   price: 4230}
   ,
@@ -5723,7 +5723,7 @@ const weaponShoulder = [
   apCost: 26,
   ammo: 4,
   range: `5-8`,
-  skill: `Minimum Range -1
+  skill: `Min Range -1
   Auto Reload`,
   price: 4770}
   ,
@@ -5762,7 +5762,7 @@ const weaponShoulder = [
   ammo: 4,
   aoe: 4,
   range: `3-6`,
-  skill: `Minimum Range -1
+  skill: `Min Range -1
   Area of Effect +1`,
   price: 4930}
   ,
@@ -5802,7 +5802,7 @@ const weaponShoulder = [
   ammo: 2,
   aoe: 4,
   range: `3-6`,
-  skill: `Minimum Range -1
+  skill: `Min Range -1
   Auto Reload`,
   price: 7390}
   ,
@@ -5842,7 +5842,7 @@ const weaponShoulder = [
   ammo: 4,
   aoe: 3,
   range: `3-7`,
-  skill: `Minimum Range -1`,
+  skill: `Min Range -1`,
   price: 4620}
   ,
   {id: 29,
@@ -5855,7 +5855,7 @@ const weaponShoulder = [
   ammo: 3,
   aoe: 3,
   range: `2-6`,
-  skill: `Minimum Range -2`,
+  skill: `Min Range -2`,
   price: 4620}
   ,
   {id: 30,
@@ -5920,7 +5920,7 @@ const weaponShoulder = [
   ammo: 2,
   aoe: 4,
   range: `7-10`,
-  skill: `MInimum Range -1
+  skill: `Min Range -1
   Auto Reload`,
   price: 7690}
   ,
@@ -5960,7 +5960,7 @@ const weaponShoulder = [
   ammo: 4,
   aoe: 3,
   range: `7-11`,
-  skill: `Minimum Range -1`,
+  skill: `Min Range -1`,
   price: 4770}
   ,
   {id: 38,
@@ -5973,7 +5973,7 @@ const weaponShoulder = [
   ammo: 3,
   aoe: 3,
   range: `6-10`,
-  skill: `Minimum Range -2`,
+  skill: `Min Range -2`,
   price: 4770}
   ,
   {id: 39,
@@ -6038,7 +6038,7 @@ const weaponShoulder = [
   ammo: 4,
   aoe: 4,
   range: `7-10`,
-  skill: `Minimum Range -1
+  skill: `Min Range -1
   Area of Effect +1`,
   price: 5230}
   ,
