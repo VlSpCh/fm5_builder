@@ -166,7 +166,7 @@ select {
 
     body {
       font-size: 70%;
-      margin-left: 0.2rem;
+      margin-left: 0.5rem;
     }
    
     .header_container {
@@ -193,7 +193,7 @@ select {
       margin: 0.2rem;
       padding: 0.05rem;
       padding-top: 0.16rem;
-      font-size: 80%;
+      font-size: 75%;
     }
 
     select {
